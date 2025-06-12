@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>人物标记图</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    .marker {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      border: 2px solid white;
+      cursor: pointer;
+    }
+    .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      display: none;
+      font-size: 14px;
+    }
+    .marker:hover + .tooltip {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h2>点击红点查看人物信息</h2>
+  <div class="image-container">
+    <!-- 替换为你自己的图片文件名 -->
+    <img src="1.jpg" alt="人物合影" width="1000" />
+    <!-- 标记点1：普京 --> 
+    <a href="2.html" class="marker" style="top: 130px; left: 680px;"></a>
+    <div class="tooltip" style="top: 210px; left: 150px;">普京</div>
+    <!-- 标记点2：金正恩 -->
+    <a href="3.html" class="marker" style="top: 110px; left: 420px;"></a>
+    <div class="tooltip" style="top: 220px; left: 330px;">金正恩</div>
+<!-- 你可以继续添加更多人物 -->
+<!-- 文字说明区域 -->    <div class="description-area">   <p>本合影拍摄于 <strong>2024年6月19日</strong> 普京与金正恩会晤期间</p>
+  </div>
+</body>
+</html>
